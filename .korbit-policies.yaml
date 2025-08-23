@@ -2,11 +2,7 @@ version: "0.1"
 topics:
   - name: Python Configuration Management
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "*/main.py"
-      - "*/app.py"
-      - "config/**/*.py"
+      - "**/*.py"
     policies:
     - title: "Do Not Hardcode Secrets in Source Code"
       description: |
@@ -33,10 +29,7 @@ topics:
 
   - name: Async‑First Design
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "routers/**/*.py"
-      - "*/main.py"
+      - "**/*.py"
     policies:
       - title: "Require Async Endpoint Definitions"
         description: |
@@ -160,9 +153,7 @@ topics:
 
   - name: "Dependency Injection & Modular Services"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "routers/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Use FastAPI Depends for Dependency Injection"
         description: |
@@ -305,9 +296,7 @@ topics:
 
   - name: "Request Validation with Pydantic Models"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "routers/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Define Explicit Request/Response Models"
         description: |
@@ -562,9 +551,7 @@ topics:
 
   - name: "Security & Authentication"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "routers/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Enforce HTTPS Redirection for All Endpoints"
         description: |
@@ -784,10 +771,7 @@ topics:
  
   - name: "Rate Limiting and Throttle"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "routers/**/*.py"
-    
+      - "**/*.py"
     policies:
       - title: "Enforce Rate Limiting on Sensitive Endpoints"
         description: |
@@ -946,10 +930,7 @@ topics:
 
   - name: "OpenAPI & Swagger Documentation Policy Pack"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "routers/**/*.py"
-    
+      - "**/*.py"  
     policies:
       - title: "Generate OpenAPI Documentation for All Endpoints"
         description: |
@@ -1084,8 +1065,7 @@ topics:
 
   - name: "Error Handling & Problem Details"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Standardize Error Responses with Problem+JSON"
         description: |
@@ -1309,8 +1289,7 @@ topics:
   
   - name: "Structured Logging & Correlation IDs"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Include X-Request-ID in All Logs and Responses"
         description: |
@@ -1398,9 +1377,7 @@ topics:
 
   - name: "Database Access Layer"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "db/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Use Async Database Drivers and Sessions"
         description: |
@@ -1535,9 +1512,7 @@ topics:
                 
   - name: "Background Tasks and Schedulers"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "tasks/**/*.py"
+      - "**/*.py"
     policies:
 
       - title: "Inject Background Task Handlers via Dependency Injection"
@@ -1728,8 +1703,7 @@ topics:
                 
   - name: "Cache Strategy (Redis / CDN)"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Use Async Redis Clients for Caching in FastAPI"
         description: |
@@ -1806,8 +1780,7 @@ topics:
 
   - name: "API Versioning & Deprecation"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Require URL Path Prefixes for API Versioning"
         description: |
@@ -1918,8 +1891,7 @@ topics:
 
   - name: "Unit, Integration & Contract Testing"
     paths:
-      - "tests/**/*.py"
-      - "app/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Isolate Tests with Dependency Overrides"
         description: |
@@ -1984,8 +1956,7 @@ topics:
 
   - name: "Configuration & Settings Management"
     paths:
-      - "config/**/*.py"
-      - "app/**/*.py"
+      - "**/*.py"
     policies:
       - title: "All Configuration Values Must Have Safe Defaults or Be Required"
         description: |
@@ -2045,8 +2016,7 @@ topics:
 
   - name: "Observability & Metrics"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
+      - "**/*.py"
     policies:
       - title: "Expose Prometheus-Compatible Metrics for All Deployments"
         description: |
@@ -2293,8 +2263,7 @@ topics:
 
   - name: "Common Pitfalls (Blocking Calls, Global State)"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
+      - "**/*.py"
     policies:
 
       - title: "Avoid Unnecessary or Side-Effect-Causing Imports in FastAPI Application Code"
@@ -2506,9 +2475,7 @@ topics:
 
   - name: "Code Quality & Maintainability"
     paths:
-      - "app/**/*.py"
-      - "src/**/*.py"
-      - "routers/**/*.py"
+      - "**/*.py"
     policies:
 
       - title: "Require Explicit Type Annotations for Functions and Public Classes"
